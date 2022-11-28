@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  background: hsl(30deg, 38%, 92%);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(auto, 350px);
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 16px;
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, minmax(auto, 350px));
+  }
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.card__img--mobile {
+  border-radius: 20px 20px 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .card__img--mobile {
+    display: none;
+  }
+}
+.card__img--desktop {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .card__img--desktop {
+    display: block;
+    border-radius: 20px 0 0 20px;
+  }
+}
+.card__info {
+  width: auto;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  padding: 24px;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 0 0 20px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .card__info {
+    border-radius: 0 20px 20px 0;
+    padding: 48px 24px;
+  }
+}
+.card__info--category {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.card__info--product {
+  margin-bottom: 16px;
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.card__info--description {
+  align-self: center;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+.card__info--price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  color: hsl(158deg, 36%, 37%);
+  font-weight: 700;
+}
+.card__info--price small {
+  margin-left: 24px;
+  color: hsl(228deg, 12%, 48%);
+  opacity: 0.7;
+  text-decoration: line-through;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.card__info button {
+  width: 100%;
+  height: 3.6rem;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(158deg, 36%, 37%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.card__info button span {
+  display: inline-block;
+  margin-right: 8px;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("../images/icon-cart.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: hsl(0deg, 0%, 100%);
+}
+.card__info button:hover {
+  background: hsl(158deg, 36%, 20%);
+}/*# sourceMappingURL=stylus.css.map */
