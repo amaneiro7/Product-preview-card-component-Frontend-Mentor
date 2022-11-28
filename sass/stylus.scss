@@ -1,5 +1,5 @@
 $color-primario: hsl(158, 36%, 37%);
-$color-primario-variacion: hsl(158, 36%, 20%);
+$color-primario-variacion: #235845;
 $color-secundario: hsl(30, 38%, 92%);
 $color-claro: hsl(0, 0%, 100%);
 $color-oscuro:hsl(212, 21%, 14%);
@@ -121,6 +121,8 @@ body {
             }
             &:hover {
                 background: $color-primario-variacion;
+                transform: translateY(-1px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             }
         }
         
