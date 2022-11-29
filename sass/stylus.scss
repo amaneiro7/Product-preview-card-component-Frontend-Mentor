@@ -14,7 +14,7 @@ $fuente2: 'Fraunces', serif;
 }
 
 body {
-    font-size: 62.5%;    
+    font-size: 62.5%;
     font-family: $fuente1;
     background: $color-secundario;
     min-height: 100vh;
@@ -31,7 +31,7 @@ body {
     grid-template-rows: auto auto;
     align-items: center;
     justify-content: center;
-    margin: 24px 16px;
+    margin: 1.5rem 1rem;
     &__img {
         width: 100%;
         height: 100%;
@@ -55,15 +55,15 @@ body {
         height: 100%;
         display: grid;
         grid-template-rows: auto auto 1fr auto auto;
-        padding: 24px;
+        padding: 1.5rem;
         background: $color-claro;
         border-radius: 0 0 20px 20px;
         @media only screen and (min-width: 768px) {            
             border-radius: 0 20px 20px 0;
-            padding: 48px 24px;
+            padding: 3rem 1.5rem;
         }
         &--category {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             font-size: 1.2rem;
             font-weight: 500;
             letter-spacing: 0.5rem;
@@ -71,14 +71,14 @@ body {
             opacity: .5;
         }
         &--product {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             font-family: $fuente2;
             font-size: 1.8rem;
             font-weight: 700;
         }
         &--description {
             align-self: center;
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 2.2rem;
@@ -87,13 +87,13 @@ body {
         &--price {
             display: flex;
             align-items: center;            
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             font-size: 1.8rem;
             font-family: $fuente2;
             color: $color-primario;
             font-weight: 700;
             small {
-                margin-left: 24px;
+                margin-left: 1.5rem;
                 color: $color-oscuro-variacion;
                 opacity: .7;
                 text-decoration: line-through;
